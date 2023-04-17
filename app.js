@@ -26,20 +26,22 @@ module.exports = app;
 
 1. From your workspace, use the command: 'npx express-generator --no-view <name-of-your-app>'
 
-    Replace <name-of-your-app> with your planned API name (making sure to use dashes instead of spaces if needed). This will create your boilerplate routes file structure.
+    Replace <name-of-your-app> with your planned API name (making sure to use dashes instead of spaces if needed). This will create a brand new directory with a boilerplate routes file structure.
 
 2. Following the instructions listed from express-generator that were printed into your terminal after install, navigate into the newly-created directory and run the command: 'npm install' to install all the dependencies. 
 
-2a. Optional: For development purposes, I installed the 'nodemon' package with the commend: 'npm install nodemon -D'
+2a. Optional: For development purposes, I installed the 'nodemon' package with the command: 'npm install nodemon -D'
 
-    This installs nodemon as a developer dependency, meaning if a user were to fork and clone down my API and run npm install, it won't be added into their 'node_modules' file as it was only needed for development. 
+    This installs nodemon as a developer dependency, meaning if a user were to fork and clone down my API and run 'npm install', it won't be added into their 'node_modules' file as it was only needed for development. The purpose of nodemon is to automatically refresh your server after changes are made, instead of having to close and restart the server every time.
 
-    If you do this step, go into your package.json file and modify the 'start' command under 'scripts' to say 'nodemon' instead of 'node' - now when you do npm start, nodemon automatically refreshes your server when you make changes.
+    If you do this step, go into your package.json file and modify the 'start' command under 'scripts' to say 'nodemon' instead of 'node' - now when you do 'npm start', nodemon works and automatically refreshes your server when you make changes.
 
 3. I created a '.gitignore' file and added 'node_modules' so that it wouldn't get pushed with the rest of the files to GitHub
 
 4. I created a git repository and went through the usual steps to initialize the directory, add, commit, and push
 
 5. I created a top-level folder called 'data' in the project directory which I used to store the .JSON version of the given data in a file called 'recipes.json'
+
+6. I renamed the default 'users.js' file under the 'routes' folder to my planned route, then redid the code inside with the methods that I wanted.
 
 */
