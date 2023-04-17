@@ -13,7 +13,7 @@ router.route('/') // since get and post are going to same route, I used .route t
         return; // exits the code block
       }
 
-      response.json(JSON.parse(data)); // takes the data, converts from .JSON to JavaScript, then responses back with .JSON output
+      response.json(JSON.parse(data)); // takes the data, converts from .JSON to JavaScript, then responses back with .JSON output. Important to note, the readFile method returns a long string with escape characters for every single double quote/new line, so this step is required to return in the proper format
     })
   })
   .post((request, response) => {
