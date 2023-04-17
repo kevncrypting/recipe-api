@@ -40,4 +40,6 @@ module.exports = app;
 
 4. I created a git repository and went through the usual steps to initialize the directory, add, commit, and push
 
+5. I created a top-level folder called 'data' in the project directory which I used to store the .JSON version of the given data in a file called 'recipes.json'
+
 */
