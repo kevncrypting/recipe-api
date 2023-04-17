@@ -34,7 +34,7 @@ module.exports = app;
 
     This installs nodemon as a developer dependency, meaning if a user were to fork and clone down my API and run npm install, it won't be added into their 'node_modules' file as it was only needed for development. 
 
-    If you do this step, go into your package.json file and modify the 'start' command under 'scripts' to say 'nodemon' instead of 'node' - now when you do npm start, nodemon automatically refreshes your server when you make changes
+    If you do this step, go into your package.json file and modify the 'start' command under 'scripts' to say 'nodemon' instead of 'node' - now when you do npm start, nodemon automatically refreshes your server when you make changes.
 
 3. I created a '.gitignore' file and added 'node_modules' so that it wouldn't get pushed with the rest of the files to GitHub
 
